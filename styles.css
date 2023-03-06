@@ -187,6 +187,7 @@ ul li a:hover::after {
     list-style: none;
     font-size: 1em;
     margin-left: 40px;
+    text-transform: lowercase;
   }
 
 
@@ -217,6 +218,7 @@ ul li a:hover::after {
     list-style: none;
     font-size: 1em;
     margin-left: 40px;
+    text-transform: lowercase;
   }
 
 
@@ -560,12 +562,14 @@ textarea{
     display: flex;
     color: white;
     z-index: 1;
+    text-transform: lowercase;
   }
   #press-menu{
     padding-top: 3px;
     display: flex;
     color: white;
     z-index: 1;
+    text-transform: lowercase;
   }
 
 
@@ -608,6 +612,10 @@ textarea{
     margin:0;
 }
 
+video{
+    padding-top: 50px;
+    max-width: 80vh;
+}
 
    .sidebar {
     z-index: 1;
@@ -616,21 +624,19 @@ textarea{
     position: fixed;
         }
 
-
    #menu {
-    width: auto;
+    width: 10rem;
     padding-top: 15px;
     display: flex;
     position: relative;
     color: white;
     z-index: 1;
-
-    
+    margin: 1%;
 }
 
 
 #liminal-menu {
-    width: auto;
+    width: 10rem;
     padding-top: 15px;
     display: flex;
     position: relative;
@@ -704,10 +710,7 @@ button#btn-submit{
         font-size: 7px;
     }
 
-    #menu {
-        justify-content: center;
-        align-items: center;
-    }
+
  }
 
 
