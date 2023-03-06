@@ -1,0 +1,846 @@
+
+
+/* Basic */
+
+h1 {
+    margin: 0;
+    
+}
+
+
+
+@-ms-viewport {
+    width: device-width;
+}
+
+body {
+    -ms-overflow-style: scrollbar;
+    
+}
+
+@media screen and (max-width: 480px) {
+
+    html, body {
+        min-width: 320px;
+    }
+
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+body {
+    background: #000000;
+    margin: auto 0;
+    font-family: "Oxygen";
+}
+
+    body.is-preload *, body.is-preload *:before, body.is-preload *:after {
+        -moz-animation: none !important;
+        -webkit-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
+        -moz-transition: none !important;
+        -webkit-transition: none !important;
+        -ms-transition: none !important;
+        transition: none !important;
+    }
+
+
+
+
+/*Big screen*/
+
+.page {
+    display: grid;
+    grid-template-columns: 40vh auto;
+    
+}
+
+.sidebar {
+    position: fixed;
+    height: 100vh;
+    width: 40vh;
+    background:linear-gradient(to right, rgb(167, 129, 197), rgb(117, 199, 181));
+}
+.main {
+    grid-column-start: 4;   
+}
+
+
+
+/*Nav*/
+
+#menu{
+    padding-top: 30vh;
+    display:block;
+    list-style: none;
+    font-size: 1em;
+    margin-left: 40px;
+    text-transform: lowercase;
+  }
+
+li{
+    padding: 20px;
+    list-style: none;
+    letter-spacing: 0.2rem;
+    font-size: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+ul li a:before{
+    content: "";
+    width: 0;
+    height: 3px;
+    background:linear-gradient(to right, rgb(79,66,72), rgb(115, 102, 168));
+    position: absolute;
+    left: 0;
+    top:110%;
+    transition: all 0.5s;
+}
+
+
+ul li a:after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background:white;
+    position: absolute;
+    right: 0;
+    top:110%;
+    transition: all 0.5s;
+
+}
+
+
+ul li a:hover::before {
+    width: 50%;
+    transform: translateX(100%);
+}
+
+ul li a:hover::after {
+    width: 50%;
+    transform: translateX(-100%);
+}
+
+
+
+.welcome{
+    padding-top: 0px;
+    margin:0;
+    font-size: 1.5rem;
+    line-height: 1rem;
+    letter-spacing: 0.2rem;
+} 
+
+
+#background-video{
+    width: 100%;
+}
+
+#thanks {
+    margin: 20px;
+    padding-top: 20px;
+}
+
+#introWork{
+    margin-top: 20vh;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+
+}
+
+
+
+/*Liminal*/
+
+.welcome-liminal{
+    background-image: url(images/IMG_1839.JPG);
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+    top:0;
+    padding-top: 35vh;
+    padding-left: 50px;
+    margin:0;
+    height: 100vh;
+    font-size: 1.5rem;
+    line-height: 1rem;
+    letter-spacing: 0.2rem;
+}
+
+#liminal-menu{
+    padding-top: 30vh;
+    display:block;
+    list-style: none;
+    font-size: 1em;
+    margin-left: 40px;
+  }
+
+
+
+
+
+/*Press*/
+
+.welcome-press {
+    background-image: url(images/giac1.JPG);
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
+    top:0;
+    padding-top: 35vh;
+    padding-left: 50px;
+    margin:0;
+    height: 100vh;
+    font-size: 1.5rem;
+    line-height: 1rem;
+    letter-spacing: 0.2rem;
+}
+
+
+#press-menu{
+    padding-top: 30vh;
+    display:block;
+    list-style: none;
+    font-size: 1em;
+    margin-left: 40px;
+  }
+
+
+
+.liminal-boxText{
+    padding: 0px 0px;
+    margin: 4% 15%;
+    line-height: 1.4rem;
+    letter-spacing: 0.1rem;
+    text-align: left;
+}
+
+#link {
+    color: rgb(144, 228, 204);
+}
+
+#link:hover {
+    color: rgb(183, 112, 241);
+}
+
+
+.caruosel-wrapper{
+    margin: 3%;
+    max-width: 1200px;
+    display: flex;
+    position: relative;
+}
+
+.caruosel{
+    font-size: 0px;
+   cursor: pointer;
+   overflow: hidden;
+   white-space: nowrap;
+}
+
+
+.caruosel img{
+    height: 500px;
+    width:calc(100%/3);
+    object-fit: cover;
+    margin-left: 14px;
+}
+
+.caruosel img:first-child {
+    margin-left: 0px;
+}
+
+
+i {
+    top: 250px;
+    position: relative;
+    margin: 0 10px;
+    background: white;
+    color:#4e4173;
+    height: 25px;
+    width: 25px;
+    text-align:justify;
+    border-radius: 30%;
+    cursor: pointer;
+    padding: 5px 5px 0px 5px;
+   
+}
+
+.caruosel-wrapper i:first-child{
+    left:-23px;
+}
+.caruosel-wrapper i:last-child{
+    right:-23px;
+}
+
+
+
+div#welcome p {
+    padding-top:30px;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 70vh auto;
+    z-index: -1;
+}
+
+img {
+   width: 50vh;
+   max-height: auto;
+}
+
+.boxImg {
+    width: 70vh;
+    height: 50vh;
+    padding: 20px 0;
+}
+
+
+
+
+p{
+    color:white;
+    margin: 0;
+}
+
+h1{
+    color: white;
+}
+
+
+
+hr{
+    background-image:linear-gradient(to left, rgb(167, 129, 197), rgb(117, 199, 181));
+    height: 2px;
+    border: 0;
+    box-shadow: 0 0 10px 2px grey;
+    }
+    
+
+
+/*Work*/
+
+.boxText {
+    padding: 20px;
+    margin: auto 8%;
+    line-height: 1.4rem;
+    letter-spacing: 0.1rem;
+    text-align: left;
+}
+
+
+h3 {
+    color: white;
+    font-size: medium;
+}
+
+h4{
+    margin: 0;
+    color: white;
+    font-size: small;
+}
+
+.describtion {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    margin: 20px 0;
+
+}
+
+
+#quote {
+    font-size: smaller;
+    font-style: italic;
+}
+
+
+
+.learnmore {
+  text-transform: lowercase;
+  font-size: 0.8rem;
+  margin-left: 30%;
+  color: white;
+}
+
+
+.learnmore:before{
+    content: "";
+    padding: 5px;
+    position: absolute;
+    height:40px;
+    width: 110px;
+    top: -10px;
+    left: -15px;
+    border-left: 2px solid rgb(115, 102, 168);
+    border-right: 2px solid rgb(115, 102, 168);
+    transition: all 1s;
+}
+
+.learnmore:after{
+    content: "";
+    position: absolute;
+    height: 40px;
+    width: 110px;
+    top: -10px;
+    left: -15px;
+    border-top: 2px solid rgb(115, 102, 168);
+    border-bottom: 2px solid rgb(115, 102, 168);
+    transition: all 1s;
+    transition-delay: 0.3s;
+}
+
+
+.learnmore:hover:before{
+    transform: rotateY(180deg);
+}
+
+.learnmore:hover:after{
+    transform: rotateX(180deg);
+}
+
+/*Bio*/
+
+#about{
+    height: auto;
+    text-align: justify;
+    margin: 5% 10%;
+    padding: 2% 10%;
+    line-height: 1.7rem;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    background:linear-gradient(black, rgb(115, 102, 168));
+    /*background-color:#2a223c;*/
+}
+
+h2 {
+    color: white;
+    padding: 20px;
+    font-size: 2rem;
+    font-weight: 800;
+    text-transform: lowercase;
+}
+
+
+
+/*Contact*/
+
+.contact {
+    height: auto;
+    text-align: justify;
+    margin: 5% 10%;
+    padding: 2% 10%;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    background:linear-gradient(rgb(115, 102, 168), rgb(117, 199, 181)); 
+}
+
+
+
+#touch {
+    font-family: "Oxygen";
+
+}
+
+form{
+    font-family: "Oxygen";
+    display: flex;
+    flex-direction: column;
+    width: 24rem;
+    gap:1rem;
+    margin: 3% 10%;
+}
+
+
+
+input{
+    font-family: "Oxygen";
+    background: transparent;
+    border: 2px solid rgb(115, 102, 168);
+}
+
+textarea{
+    height: 200px;
+    font-family: "Oxygen";
+    background: transparent;
+    border: 2px solid rgb(115, 102, 168)
+}
+
+#btn-submit {
+    font-family: "Oxygen";
+    border: 2px solid white;
+    text-transform: lowercase;
+    letter-spacing: 0.1rem;
+    padding: 3px;
+    color: white;
+    width: 20%;
+    background-color: #4e4173;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+  #btn-submit:hover {
+    background-color: white;
+    color: #4e4173;
+    font-weight: 700;
+  }
+
+
+/*Footer*/
+
+
+.footerWrapper{
+    display: grid;
+    grid-template-columns:  auto;
+    background:linear-gradient(to right, rgb(117, 199, 181),rgb(167, 129, 197));
+
+    padding: 20px;
+    font-size: small;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+/*When medium*/
+
+@media only screen and (max-width: 700px){
+   
+   .page { 
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   }
+
+   .sidebar {
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    }
+  
+  #menu{
+    padding-top: 3px;
+    display: flex;
+    color: white;
+    z-index: 1;
+  }
+
+  #liminal-menu{
+    padding-top: 3px;
+    display: flex;
+    color: white;
+    z-index: 1;
+  }
+  #press-menu{
+    padding-top: 3px;
+    display: flex;
+    color: white;
+    z-index: 1;
+  }
+
+
+  li{
+    padding-top:0;
+    padding-left: 20px;
+    padding-right: 2%;
+    font-size: 0.8rem;
+  }
+.caruosel img {
+    width: calc(100%/2);
+}
+
+}
+
+/*small*/
+
+@media only screen and (max-width: 575px) {
+    
+    .wrapper{
+        display: flex;
+		flex-wrap: wrap;
+		box-sizing: border-box;
+		align-items: stretch;
+    }
+
+    .boxImg{
+      width: 50vh;
+      height: 40vh;
+      margin: auto;
+      padding: 2%;
+    }
+    .boxText{
+        padding-bottom: 30px;
+    }
+
+ .welcome {
+        display: flex;
+        font-size: 1rem;
+    }
+
+ .sidebar {
+    padding: 0;
+    z-index: 1;
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+        }
+
+
+ #menu {
+    width: auto;
+    padding-top: 15px;
+    display: flex;
+    position: relative;
+    padding-left: 0;
+    color: white;
+    z-index: 1;
+    margin: 0;
+}
+
+
+#liminal-menu {
+    width: auto;
+    padding-top: 15px;
+    display: flex;
+    position: relative;
+    padding-left: 0;
+    color: white;
+    z-index: 1;
+    margin: 0;
+}
+
+
+#press-menu {
+    width: 10rem;
+    padding-top: 15px;
+    display: flex;
+    position: relative;
+    padding-left: 0;
+    color: white;
+    z-index: 1;
+    margin: 0;
+}
+
+
+
+li {
+     font-size: 0.5rem;
+        padding-top:0;
+        padding-left: 20px;
+        padding-right: 2%;
+        
+}
+
+form{
+    font-family: "Oxygen";
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+    gap:1rem;
+    margin: 3% 10%;
+}
+
+.caruosel img {
+    width: calc(100%/1);
+}
+
+
+h2{
+    font-size: medium;
+}
+
+
+button#btn-submit{
+
+    font-size: 0.5rem;
+}
+
+#footer{
+    font-size: 0.5rem;
+}
+
+ }
+
+
+/*mobile*/
+
+@media only screen and (max-width: 375px) {
+    
+
+
+
+    .caruosel-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 15%;
+        padding: 30px;
+        max-width: 350px;
+        
+    }
+    .caruosel{
+      font-size: 0px;
+       cursor: pointer;
+       overflow: hidden;
+       white-space: nowrap;
+    }
+    
+    .caruosel img{
+        max-width: 330px;
+        max-height: 350px;
+        width:calc(100%/1);
+        object-fit: cover;
+        margin-left: 14px;
+    }
+
+    .caruosel img:first-child {
+        margin-left: 0px;
+    }
+     
+    i {
+        display: flex;
+        bottom: 250px;
+        position: absolute;
+        margin: 0 5px;
+        background: white;
+        color:#4e4173;
+        height: 25px;
+        width: 25px;
+        text-align:justify;
+        border-radius: 30%;
+        cursor: pointer;
+        padding: 5px 5px 0px 5px;
+       
+    }
+    
+    .caruosel-wrapper i:first-child{
+        left:-5px;
+    }
+    .caruosel-wrapper i:last-child{
+        right:-5px;
+    }
+    
+
+    .boxText{
+        padding-bottom: 30px;
+    }
+
+ .welcome {
+        display: flex;
+        font-size: 1rem;
+    }
+
+
+
+
+    .boxImg{
+      width: 40vh;
+      height: 40vh;
+      margin: auto;
+      padding: 2%;
+    }
+    .boxText{
+        padding-bottom: 30px;
+    }
+
+
+
+ .sidebar {
+    padding: 0;
+    display: flex;
+    margin: auto;
+    z-index: 1;
+ }
+
+ #menu {
+    width: 10rem;
+    padding-top: 15px;
+    display: flex;
+    position: relative;
+    padding-left: 0;
+    color: white;
+    z-index: 1;
+    margin:0;
+}
+#liminal-menu {
+    width: 10rem;
+    padding-top: 15px;
+    display: flex;
+    position: relative;
+    padding-left: 0;
+    color: white;
+    z-index: 1;
+    margin: 0;
+}
+
+
+#press-menu {
+    width: 10rem;
+    padding-top: 15px;
+    display: flex;
+    position: relative;
+    padding-left: 0;
+    color: white;
+    z-index: 1;
+    margin: 0;
+}
+
+#menu ul {
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+}
+
+
+li {
+    font-size: 40px;
+    padding: 5px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+form{
+    font-family: "Oxygen";
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+    gap:1rem;
+    margin: 3% 10%;
+}
+
+
+h2{
+    font-size: medium;
+}
+
+
+button#btn-submit{
+
+    font-size: 0.5rem;
+}
+
+#footer{
+    font-size: 0.5rem;
+}
+
+ }
+
+
+
+
+
