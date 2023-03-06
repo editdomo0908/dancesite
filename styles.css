@@ -694,6 +694,15 @@ button#btn-submit{
 
  }
 
+ @media only screen and (max-width: 575px){
+    li {
+        font-size: 7px;
+    }
 
+    #menu {
+        justify-content: center;
+        align-items: center;
+    }
+ }
 
 
