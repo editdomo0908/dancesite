@@ -532,6 +532,21 @@ textarea{
     height: 50px;
     position: fixed;
     }
+
+    .welcome{
+        display: grid;
+        grid-template-columns: 1 fr 1 fr;
+    }
+
+   #background-video{
+        grid-template-columns: 1 fr ;
+        display: flex;
+    }
+   #thanks{
+    grid-template-columns: 1 fr ;
+    display: flex;
+}
+
   
   #menu{
     padding-top: 3px;
@@ -587,12 +602,7 @@ textarea{
         padding-bottom: 30px;
     }
 
- .welcome {
-        display: flex;
-        font-size: 1rem;
-    }
-
- .sidebar {
+   .sidebar {
     padding: 0;
     z-index: 1;
     grid-template-columns: 1fr;
@@ -602,15 +612,15 @@ textarea{
         }
 
 
- #menu {
+   #menu {
     width: auto;
     padding-top: 15px;
     display: flex;
     position: relative;
-    padding-left: 0;
     color: white;
     z-index: 1;
-    margin: 0;
+    margin: 1%;
+    
 }
 
 
@@ -619,10 +629,9 @@ textarea{
     padding-top: 15px;
     display: flex;
     position: relative;
-    padding-left: 0;
     color: white;
     z-index: 1;
-    margin: 0;
+    margin: 1%;
 }
 
 
@@ -634,17 +643,22 @@ textarea{
     padding-left: 0;
     color: white;
     z-index: 1;
-    margin: 0;
+    margin: 1%;
+}
+
+#thanks {
+    width: 100%;
 }
 
 
+#thankYou{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-top: 30px;
+}
 
-li {
-     font-size: 0.5rem;
-        padding-top:0;
-        padding-left: 20px;
-        padding-right: 2%;
-        
+h1 {
+    font-size: 2rem;
 }
 
 form{
@@ -660,167 +674,8 @@ form{
     width: calc(100%/1);
 }
 
-
-h2{
-    font-size: medium;
-}
-
-
-button#btn-submit{
-
-    font-size: 0.5rem;
-}
-
-#footer{
-    font-size: 0.5rem;
-}
-
- }
-
-
-/*mobile*/
-
-@media only screen and (max-width: 375px) {
-    
-
-
-
-    .caruosel-wrapper{
-        display: flex;
-        flex-wrap: wrap;
-        margin: 15%;
-        padding: 30px;
-        max-width: 350px;
-        
-    }
-    .caruosel{
-      font-size: 0px;
-       cursor: pointer;
-       overflow: hidden;
-       white-space: nowrap;
-    }
-    
-    .caruosel img{
-        max-width: 330px;
-        max-height: 350px;
-        width:calc(100%/1);
-        object-fit: cover;
-        margin-left: 14px;
-    }
-
-    .caruosel img:first-child {
-        margin-left: 0px;
-    }
-     
-    i {
-        display: flex;
-        bottom: 250px;
-        position: absolute;
-        margin: 0 5px;
-        background: white;
-        color:#4e4173;
-        height: 25px;
-        width: 25px;
-        text-align:justify;
-        border-radius: 30%;
-        cursor: pointer;
-        padding: 5px 5px 0px 5px;
-       
-    }
-    
-    .caruosel-wrapper i:first-child{
-        left:-5px;
-    }
-    .caruosel-wrapper i:last-child{
-        right:-5px;
-    }
-    
-
-    .boxText{
-        padding-bottom: 30px;
-    }
-
- .welcome {
-        display: flex;
-        font-size: 1rem;
-    }
-
-
-
-
-    .boxImg{
-      width: 40vh;
-      height: 40vh;
-      margin: auto;
-      padding: 2%;
-    }
-    .boxText{
-        padding-bottom: 30px;
-    }
-
-
-
- .sidebar {
-    padding: 0;
-    display: flex;
-    margin: auto;
-    z-index: 1;
- }
-
- #menu {
-    width: 10rem;
-    padding-top: 15px;
-    display: flex;
-    position: relative;
-    padding-left: 0;
-    color: white;
-    z-index: 1;
-    margin:0;
-}
-#liminal-menu {
-    width: 10rem;
-    padding-top: 15px;
-    display: flex;
-    position: relative;
-    padding-left: 0;
-    color: white;
-    z-index: 1;
-    margin: 0;
-}
-
-
-#press-menu {
-    width: 10rem;
-    padding-top: 15px;
-    display: flex;
-    position: relative;
-    padding-left: 0;
-    color: white;
-    z-index: 1;
-    margin: 0;
-}
-
-#menu ul {
-    justify-content: center;
-    align-items: center;
-    position:absolute;
-}
-
-
 li {
-    font-size: 40px;
-    padding: 5px;
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
-form{
-    font-family: "Oxygen";
-    display: flex;
-    flex-direction: column;
-    width: 10rem;
-    gap:1rem;
-    margin: 3% 10%;
+    font-size: 0.5rem;
 }
 
 
@@ -828,10 +683,9 @@ h2{
     font-size: medium;
 }
 
-
 button#btn-submit{
 
-    font-size: 0.5rem;
+    font-size: 0.4rem;
 }
 
 #footer{
@@ -839,7 +693,6 @@ button#btn-submit{
 }
 
  }
-
 
 
 
