@@ -431,7 +431,7 @@ h4{
     line-height: 1.7rem;
     font-size: 1rem;
     letter-spacing: 0.1rem;
-    background:linear-gradient(black, rgb(115, 102, 168));
+    background:linear-gradient(black, rgb(167, 129, 197));
     /*background-color:#2a223c;*/
 }
 
@@ -461,7 +461,7 @@ h2 {
     line-height: 1.5rem;
     font-size: 1rem;
     letter-spacing: 0.1rem;
-    background:linear-gradient(rgb(115, 102, 168), rgb(117, 199, 181)); 
+    background:linear-gradient(rgb(167, 129, 197), rgb(117, 199, 181)); 
 }
 
 
@@ -485,14 +485,14 @@ form{
 input{
     font-family: "Oxygen";
     background: transparent;
-    border: 2px solid rgb(115, 102, 168);
+    border: 2px solid white;
 }
 
 textarea{
     height: 200px;
     font-family: "Oxygen";
     background: transparent;
-    border: 2px solid rgb(115, 102, 168)
+    border: 2px solid white;
 }
 
 #btn-submit {
@@ -503,7 +503,7 @@ textarea{
     padding: 3px;
     color: white;
     width: 20%;
-    background-color: #a587f7;
+    background-color:rgb(167, 129, 197);
     cursor: pointer;
     transition: all 1s;
 }
