@@ -225,7 +225,9 @@ ul li a:hover::after {
     text-transform: lowercase;
   }
 
-
+.press-title{
+    text-transform: none;
+}
 
 .liminal-boxText{
     padding: 0px 0px;
@@ -441,6 +443,12 @@ h2 {
     text-transform: lowercase;
 }
 
+#showreel{
+    padding: 20px;
+    color: aquamarine;
+    font-weight: 700;
+}
+
 
 
 /*Contact*/
@@ -495,7 +503,7 @@ textarea{
     padding: 3px;
     color: white;
     width: 20%;
-    background-color: #4e4173;
+    background-color: #a587f7;
     cursor: pointer;
     transition: all 1s;
 }
@@ -718,6 +726,50 @@ button#btn-submit{
         width: 50vh;
     }
 
+   
+.welcome {
+    max-width: 100vh;
+    margin:0;
+}
+
+video{
+    padding-top: 50px;
+    max-width: 80vh;
+}
+
+   .sidebar {
+    z-index: 1;
+    grid-template-columns: 1fr;
+    width: 100%;
+    position: fixed;
+        }
+
+   #menu {
+    width: 10rem;
+    padding-top: 15px;
+    padding-left: 0;
+    display: flex;
+    position: relative;
+    color: white;
+    z-index: 1;
+    margin: 1%;
+}
+
+#thanks{
+    display: inline-block;
+}
+
+#hello{
+    display: block;
+}
+
+#thankYou{
+    display: flex;
+}
+
+#btn-submit{
+    font-size: 0.3rem;
+}
+
  }
-
-
+ 
