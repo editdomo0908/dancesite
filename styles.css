@@ -102,7 +102,7 @@ a{
 ul li a:before{
     content: "";
     width: 0;
-    height: 3px;
+    height: 2px;
     background:linear-gradient(to right, rgb(79,66,72), rgb(115, 102, 168));
     position: absolute;
     left: 0;
@@ -114,7 +114,7 @@ ul li a:before{
 ul li a:after{
     content: "";
     width: 0;
-    height: 3px;
+    height: 2px;
     background:white;
     position: absolute;
     right: 0;
@@ -150,6 +150,37 @@ ul li a:hover::after {
     margin: auto;
 }
 
+
+@keyframes moveInLeft {
+
+    0%{
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+    80% {
+        transform: translateX(1rem);
+    }
+    100%{
+        opactity:1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveInRight {
+
+    0%{
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+    80% {
+        transform: translateX(-1rem);
+    }
+    100%{
+        opactity:1;
+        transform: translateX(0);
+    }
+}
+
 #thanks {
     margin: 20px;
     padding-top: 20px;
@@ -161,10 +192,22 @@ ul li a:hover::after {
     font-size: 1rem;
     letter-spacing: 0.1rem;
     margin: 0;
-
-    
-
 }
+
+#hello{
+    animation: moveInLeft;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+}
+
+#thankYou{
+    animation: moveInRight;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+}
+
 
 
 
@@ -330,13 +373,26 @@ h1{
     color: white;
 }
 
-
+@keyframes moveInBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(3rem); }
+    100% {
+      opacity: 1;
+      transform: translate(0); } }
 
 hr{
     background-image:linear-gradient(to left, rgb(167, 129, 197), rgb(117, 199, 181));
     height: 2px;
     border: 0;
     box-shadow: 0 0 10px 2px grey;
+    
+
+
+    animation: moveInBottom;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
     }
     
 
@@ -485,7 +541,11 @@ form{
 input{
     font-family: "Oxygen";
     background: transparent;
-    border: 2px solid white;
+    border: 2px solid white;  
+}
+
+input::-webkit-input-placeholder{
+    color: white;
 }
 
 textarea{
@@ -494,6 +554,12 @@ textarea{
     background: transparent;
     border: 2px solid white;
 }
+
+textarea::-webkit-input-placeholder{
+    color: white;
+}
+
+
 
 #btn-submit {
     font-family: "Oxygen";
@@ -533,7 +599,7 @@ textarea{
 
 /*When medium*/
 
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 900px){
    
    .page { 
    display: grid;
@@ -561,6 +627,11 @@ textarea{
     display: flex;
 }
 
+#thankYou {
+    font-size: 1.3rem;
+   
+    margin-top: 2rem;
+}
   
   #menu{
     padding-top: 3px;
