@@ -197,7 +197,6 @@ ul li a:hover::after {
 #hello{
     animation: moveInLeft;
     animation-duration: 3s;
-    animation-delay: 1s;
     animation-timing-function: ease-out;
 }
 
