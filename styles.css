@@ -203,7 +203,6 @@ ul li a:hover::after {
 #thankYou{
     animation: moveInRight;
     animation-duration: 3s;
-    animation-delay: 1s;
     animation-timing-function: ease-out;
 }
 
